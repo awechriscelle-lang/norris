@@ -11,9 +11,10 @@ const About = () => {
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="flex flex-col items-center justify-center text-center lg:grid lg:grid-cols-2 lg:gap-12 lg:items-center lg:text-left">
+          
           {/* Content */}
-          <div>
+          <div className="flex flex-col items-center justify-center text-center lg:items-start lg:text-left">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-black mb-6">
               Qui sommes-nous ?
             </h2>
@@ -30,10 +31,10 @@ const About = () => {
             </p>
 
             {/* Features */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+            <div className="flex flex-col items-center justify-center text-center sm:grid sm:grid-cols-3 sm:gap-6 sm:text-left sm:items-start">
               {features.map((feature, index) => (
-                <div key={index} className="text-center group animate-floatUpDown">
-                  <div className="w-16 h-16 bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                <div key={index} className="text-center sm:text-left group animate-floatUpDown flex flex-col items-center sm:items-start">
+                  <div className="w-16 h-16 bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-full flex items-center justify-center mx-auto sm:mx-0 mb-4 group-hover:scale-110 transition-transform duration-300">
                     <feature.icon className="h-8 w-8 text-black" />
                   </div>
                   <h3 className="font-semibold text-black mb-2">{feature.title}</h3>
@@ -44,8 +45,8 @@ const About = () => {
           </div>
 
           {/* Image */}
-          <div className="relative animate-floatUpDown">
-            <div className="relative overflow-hidden rounded-2xl shadow-2xl">
+          <div className="relative flex flex-col items-center justify-center text-center lg:items-start lg:text-left animate-floatUpDown">
+            <div className="relative overflow-hidden rounded-2xl shadow-2xl w-full max-w-md lg:max-w-none">
               <img
                 src="https://i.ibb.co/0pyM3DdV/453762b8-c549-4879-a79d-bd4d6f2a19b0.jpg"
                 alt="Équipe God's Eye"
@@ -55,9 +56,9 @@ const About = () => {
             </div>
             
             {/* Floating Stats */}
-            <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-xl animate-floatUpDown">
-              <div className="flex items-center space-x-3">
-                <CheckCircle className="h-8 w-8 text-green-500" />
+            <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 lg:left-0 lg:translate-x-0 bg-white p-6 rounded-xl shadow-xl animate-floatUpDown">
+              <div className="flex flex-col items-center justify-center text-center lg:flex-row lg:items-center lg:space-x-3 lg:text-left">
+                <CheckCircle className="h-8 w-8 text-green-500 mb-2 lg:mb-0" />
                 <div>
                   <div className="text-2xl font-bold text-black">50+</div>
                   <div className="text-sm text-gray-600">Projets réalisés</div>
@@ -65,6 +66,7 @@ const About = () => {
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>

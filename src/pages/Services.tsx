@@ -116,27 +116,24 @@ const Services = () => {
   return (
     <div className="min-h-screen bg-white pt-20">
       {/* Hero Section */}
-<section className="py-20 bg-gradient-to-br from-black via-gray-900 to-black text-white relative overflow-hidden" style={{ paddingTop: '7rem' }}>
-  <div className="absolute inset-0 opacity-10">
-    <div className="absolute top-0 left-0 w-full h-full bg-[url('https://i.ibb.co/0pyM3DdV/453762b8-c549-4879-a79d-bd4d6f2a19b0.jpg')]"></div>
-  </div>
+      <section className="py-20 bg-gradient-to-br from-black via-gray-900 to-black text-white relative overflow-hidden" style={{ paddingTop: '7rem' }}>
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-0 left-0 w-full h-full bg-[url('https://i.ibb.co/0pyM3DdV/453762b8-c549-4879-a79d-bd4d6f2a19b0.jpg')]"></div>
+        </div>
 
-  <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-    <div
-      className="grid gap-6 p-8 sm:p-10 rounded-2xl border-2 border-yellow-500/80 
-                 bg-white/10 backdrop-blur-sm text-center shadow-2xl animate-zoomPulse max-w-4xl mx-auto"
-    >
-      <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
-        Nos <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-600">Services</span>
-      </h1>
-      <p className="text-xl text-gray-300 leading-relaxed">
-        Découvrez notre gamme complète de services professionnels conçus pour 
-        répondre à tous vos besoins en matière de création visuelle et d'événementiel.
-      </p>
-    </div>
-  </div>
-</section>
-
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+          <div className="grid gap-6 p-8 sm:p-10 rounded-2xl border-2 border-yellow-500/80 
+                 bg-white/10 backdrop-blur-sm shadow-2xl animate-zoomPulse max-w-4xl mx-auto">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
+              Nos <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-600">Services</span>
+            </h1>
+            <p className="text-xl text-gray-300 leading-relaxed">
+              Découvrez notre gamme complète de services professionnels conçus pour 
+              répondre à tous vos besoins en matière de création visuelle et d'événementiel.
+            </p>
+          </div>
+        </div>
+      </section>
 
       {/* Services Grid */}
       <section className="py-20">
@@ -145,7 +142,7 @@ const Services = () => {
             {services.map((service) => (
               <div
                 key={service.id}
-                className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden border border-gray-100 flex flex-col"
+                className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden border border-gray-100 flex flex-col text-center md:text-left"
               >
                 {/* Image */}
                 <div className="relative overflow-hidden h-64">
@@ -155,13 +152,13 @@ const Services = () => {
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all duration-300"></div>
-                  <div className={`absolute top-6 left-6 w-12 h-12 rounded-full bg-gradient-to-r ${service.color} flex items-center justify-center`}>
+                  <div className={`absolute top-6 left-1/2 md:left-6 -translate-x-1/2 md:translate-x-0 w-12 h-12 rounded-full bg-gradient-to-r ${service.color} flex items-center justify-center`}>
                     <service.icon className="h-6 w-6 text-white" />
                   </div>
                 </div>
 
                 {/* Content */}
-                <div className="p-8 flex-1 flex flex-col">
+                <div className="p-8 flex-1 flex flex-col items-center text-center md:items-start md:text-left">
                   <h3 className="text-2xl font-bold text-black mb-4 group-hover:text-yellow-600 transition-colors duration-300">
                     {service.title}
                   </h3>
@@ -183,8 +180,8 @@ const Services = () => {
 
       {/* Testimonials */}
       <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="mb-16">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-black mb-6">
               Témoignages Clients
             </h2>
@@ -198,10 +195,10 @@ const Services = () => {
             {testimonials.map((testimonial, index) => (
               <div
                 key={index}
-                className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100"
+                className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 text-center"
               >
                 {/* Rating */}
-                <div className="flex items-center mb-4">
+                <div className="flex justify-center md:justify-start mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
                     <Star key={i} className="h-5 w-5 text-yellow-500 fill-current" />
                   ))}
@@ -211,13 +208,13 @@ const Services = () => {
                   "{testimonial.content}"
                 </p>
 
-                <div className="flex items-center">
-                  <div className="w-12 h-12 bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-full flex items-center justify-center mr-4">
+                <div className="flex flex-col items-center md:flex-row md:items-center">
+                  <div className="w-12 h-12 bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-full flex items-center justify-center mr-0 md:mr-4 mb-4 md:mb-0">
                     <span className="text-black font-bold text-lg">
                       {testimonial.name.charAt(0)}
                     </span>
                   </div>
-                  <div>
+                  <div className="text-center md:text-left">
                     <h4 className="font-semibold text-black">{testimonial.name}</h4>
                     <p className="text-gray-500 text-sm">{testimonial.role}</p>
                   </div>
@@ -229,8 +226,8 @@ const Services = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-yellow-400 to-yellow-600">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="py-20 bg-gradient-to-r from-yellow-400 to-yellow-600 text-center">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-black mb-6">
             Prêt à démarrer votre projet ?
           </h2>
@@ -250,7 +247,7 @@ const Services = () => {
       {/* Service Detail Modal */}
       {selectedService && (
         <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4">
-          <div className="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+          <div className="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto text-center md:text-left">
             <div className="relative">
               {/* Header Image */}
               <div className="relative h-64 overflow-hidden rounded-t-2xl">
@@ -266,7 +263,7 @@ const Services = () => {
                 >
                   <X className="h-5 w-5" />
                 </button>
-                <div className={`absolute bottom-6 left-6 w-16 h-16 rounded-full bg-gradient-to-r ${selectedService.color} flex items-center justify-center`}>
+                <div className={`absolute bottom-6 left-1/2 md:left-6 -translate-x-1/2 md:translate-x-0 w-16 h-16 rounded-full bg-gradient-to-r ${selectedService.color} flex items-center justify-center`}>
                   <selectedService.icon className="h-8 w-8 text-white" />
                 </div>
               </div>
@@ -283,9 +280,9 @@ const Services = () => {
                 <h3 className="text-2xl font-bold text-black mb-6">
                   Ce qui est inclus :
                 </h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-center md:text-left">
                   {selectedService.features.map((feature, index) => (
-                    <div key={index} className="flex items-center">
+                    <div key={index} className="flex items-center justify-center md:justify-start">
                       <CheckCircle className="h-5 w-5 text-green-500 mr-3 flex-shrink-0" />
                       <span className="text-gray-600">{feature}</span>
                     </div>

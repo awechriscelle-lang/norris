@@ -12,7 +12,7 @@ const Services = () => {
     {
       icon: Video,
       title: 'Production Audiovisuelle',
-      description: 'Production vidéo au Bénin : clips, films d\'entreprise, documentaires et contenus créatifs.',
+      description: "Production vidéo au Bénin : clips, films d'entreprise, documentaires et contenus créatifs.",
       color: 'from-red-400 to-red-600',
     },
     {
@@ -32,8 +32,9 @@ const Services = () => {
   return (
     <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="flex flex-col items-center justify-center text-center mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-black mb-6">
             Nos Domaines d'Expertise
           </h2>
@@ -44,16 +45,16 @@ const Services = () => {
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center md:text-left">
           {services.map((service, index) => (
             <div
               key={index}
-              className="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden animate-floatUpDown"
+              className="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden animate-floatUpDown flex flex-col items-center text-center md:items-start md:text-left"
             >
               {/* Background Gradient */}
               <div className={`absolute inset-0 bg-gradient-to-br ${service.color} opacity-0 group-hover:opacity-10 transition-opacity duration-300`}></div>
               
-              <div className="p-8 relative z-10">
+              <div className="p-8 relative z-10 flex flex-col items-center text-center md:items-start md:text-left">
                 {/* Icon */}
                 <div className={`w-16 h-16 rounded-full bg-gradient-to-r ${service.color} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
                   <service.icon className="h-8 w-8 text-white" />

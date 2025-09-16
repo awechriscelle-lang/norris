@@ -22,25 +22,24 @@ const Footer = () => {
   return (
     <footer className="bg-black text-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center md:text-left">
+          
           {/* Logo & Slogan */}
-          <div className="lg:col-span-1">
-            <Link to="/" className="flex items-center space-x-2 mb-4 group">
+          <div className="flex flex-col items-center text-center md:items-start md:text-left">
+            <Link to="/" className="flex items-center justify-center md:justify-start space-x-2 mb-4 group">
               <img
-                src="https://i.ibb.co/W4hGwkF2/LOGO-GOD-S-EYE-JPEG.jpg" // <-- mets ici le lien réel de ton logo
+                src="https://i.ibb.co/W4hGwkF2/LOGO-GOD-S-EYE-JPEG.jpg"
                 alt="GOD'S EYE Logo"
                 className="w-12 h-12 rounded-[5px] object-cover group-hover:scale-105 transition-transform duration-300"
               />
-              <span className="text-2xl font-bold group-hover:text-yellow-400 transition-colors duration-300">
-                
-              </span>
+              <span className="text-2xl font-bold group-hover:text-yellow-400 transition-colors duration-300"></span>
             </Link>
             <p className="text-gray-300 mb-6 leading-relaxed">
               GOD'S EYE avec Norris CODJO, photographe professionnel au Bénin. Production audiovisuelle, drone, communication événementielle & immobilier à Cotonou.
             </p>
 
             {/* Social Links */}
-            <div className="flex space-x-4">
+            <div className="flex justify-center md:justify-start space-x-4">
               {socialLinks.map((social, index) => (
                 <a
                   key={index}
@@ -55,7 +54,7 @@ const Footer = () => {
           </div>
 
           {/* Quick Links */}
-          <div>
+          <div className="flex flex-col items-center text-center md:items-start md:text-left">
             <h3 className="text-lg font-semibold mb-4 text-yellow-500">Liens rapides</h3>
             <ul className="space-y-2">
               {quickLinks.map((link, index) => (
@@ -72,24 +71,24 @@ const Footer = () => {
           </div>
 
           {/* Contact Info */}
-          <div>
+          <div className="flex flex-col items-center text-center md:items-start md:text-left">
             <h3 className="text-lg font-semibold mb-4 text-yellow-500">Contact</h3>
             <div className="space-y-3">
               <a
                 href="tel:+229169974381"
-                className="flex items-center space-x-3 text-gray-300 hover:text-yellow-500 transition-colors duration-200"
+                className="flex items-center justify-center md:justify-start space-x-3 text-gray-300 hover:text-yellow-500 transition-colors duration-200"
               >
                 <Phone className="h-4 w-4" />
                 <span>+229 01 69 97 43 81</span>
               </a>
               <a
                 href="mailto:contact@noriscod.com"
-                className="flex items-center space-x-3 text-gray-300 hover:text-yellow-500 transition-colors duration-200"
+                className="flex items-center justify-center md:justify-start space-x-3 text-gray-300 hover:text-yellow-500 transition-colors duration-200"
               >
                 <Mail className="h-4 w-4" />
                 <span>contact@noriscod.com</span>
               </a>
-              <div className="flex items-center space-x-3 text-gray-300">
+              <div className="flex items-center justify-center md:justify-start space-x-3 text-gray-300">
                 <MapPin className="h-4 w-4" />
                 <span>Cotonou, Bénin</span>
               </div>
@@ -97,12 +96,12 @@ const Footer = () => {
           </div>
 
           {/* Newsletter */}
-          <div>
+          <div className="flex flex-col items-center text-center md:items-start md:text-left">
             <h3 className="text-lg font-semibold mb-4 text-yellow-500">Newsletter</h3>
             <p className="text-gray-300 mb-4">
               Restez informé de nos dernières actualités et projets.
             </p>
-            <div className="flex">
+            <div className="flex w-full max-w-md">
               <input
                 type="email"
                 placeholder="Votre email"
@@ -117,7 +116,7 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 mt-12 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center">
+          <div className="flex flex-col items-center text-center md:flex-row md:justify-between md:text-left">
             <p className="text-gray-400 text-sm">
               © 2025 GOD'S EYE. Tous droits réservés.
             </p>
