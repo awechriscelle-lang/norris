@@ -8,7 +8,7 @@ const Blog = () => {
     title: 'Les tendances 2025 en photographie événementielle',
     excerpt: 'Découvrez les nouvelles techniques et styles qui vont marquer le secteur de la photographie événementielle cette année.',
     image: 'https://i.ibb.co/0pyM3DdV/453762b8-c549-4879-a79d-bd4d6f2a19b0.jpg',
-    author: 'Équipe GOD\'S EYE',
+    author: "Équipe GOD'S EYE",
     date: '15 Janvier 2025',
     category: 'Photographie',
     readTime: '8 min',
@@ -43,7 +43,7 @@ const Blog = () => {
     {
       id: 2,
       title: '10 conseils pour réussir son shooting photo corporate',
-      excerpt: 'Guide complet pour préparer et réaliser des photos d\'entreprise qui valorisent votre marque professionnelle.',
+      excerpt: "Guide complet pour préparer et réaliser des photos d'entreprise qui valorisent votre marque professionnelle.",
       image: 'https://i.ibb.co/0pyM3DdV/453762b8-c549-4879-a79d-bd4d6f2a19b0.jpg',
       author: 'Marc Tondossama',
       date: '12 Janvier 2025',
@@ -55,7 +55,7 @@ const Blog = () => {
     {
       id: 3,
       title: 'Comment organiser un événement mémorable en 2025',
-      excerpt: 'Les clés d\'un événement réussi : de la planification à l\'exécution, découvrez nos secrets d\'organisation.',
+      excerpt: "Les clés d'un événement réussi : de la planification à l'exécution, découvrez nos secrets d'organisation.",
       image: 'https://i.ibb.co/0pyM3DdV/453762b8-c549-4879-a79d-bd4d6f2a19b0.jpg',
       author: 'Sarah Adjovi',
       date: '10 Janvier 2025',
@@ -66,8 +66,8 @@ const Blog = () => {
     },
     {
       id: 4,
-      title: 'L\'évolution de la vidéo aérienne par drone',
-      excerpt: 'De simple gadget à outil professionnel incontournable, retour sur l\'évolution spectaculaire des drones.',
+      title: "L'évolution de la vidéo aérienne par drone",
+      excerpt: "De simple gadget à outil professionnel incontournable, retour sur l'évolution spectaculaire des drones.",
       image: 'https://i.ibb.co/0pyM3DdV/453762b8-c549-4879-a79d-bd4d6f2a19b0.jpg',
       author: 'David Kpomahou',
       date: '8 Janvier 2025',
@@ -78,10 +78,10 @@ const Blog = () => {
     },
     {
       id: 5,
-      title: 'Les secrets d\'un bon éclairage en studio',
-      excerpt: 'Maîtrisez les techniques d\'éclairage professionnel pour sublimer vos sujets en studio.',
+      title: "Les secrets d'un bon éclairage en studio",
+      excerpt: 'Maîtrisez les techniques d’éclairage professionnel pour sublimer vos sujets en studio.',
       image: 'https://images.pexels.com/photos/3945313/pexels-photo-3945313.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
-      author: 'Équipe GOD\'S EYE',
+      author: "Équipe GOD'S EYE",
       date: '6 Janvier 2025',
       category: 'Technique',
       readTime: '9 min',
@@ -91,7 +91,7 @@ const Blog = () => {
     {
       id: 6,
       title: 'Budget événementiel : comment bien planifier ses dépenses',
-      excerpt: 'Guide pratique pour établir et gérer le budget de votre événement sans mauvaises surprises.',
+      excerpt: "Guide pratique pour établir et gérer le budget de votre événement sans mauvaises surprises.",
       image: 'https://i.ibb.co/0pyM3DdV/453762b8-c549-4879-a79d-bd4d6f2a19b0.jpg',
       author: 'Marie Akakpo',
       date: '4 Janvier 2025',
@@ -113,20 +113,19 @@ const Blog = () => {
   return (
     <div className="min-h-screen bg-white pt-20">
       {/* Hero Section */}
-<section className="py-20 bg-gradient-to-br from-black via-gray-900 to-black text-white relative overflow-hidden" style={{ paddingTop: '7rem' }}>
-  <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-    <div className="grid gap-6 p-8 sm:p-10 rounded-2xl border-2 border-yellow-500 text-center animate-zoomPulse max-w-4xl mx-auto">
-      <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
-        Actualités & <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-600">Blog</span>
-      </h1>
-      <p className="text-xl text-gray-300 leading-relaxed">
-        Restez informé de nos dernières actualités et découvrez nos conseils d'experts 
-        pour réussir vos projets créatifs et événementiels.
-      </p>
-    </div>
-  </div>
-</section>
-
+      <section className="py-20 bg-gradient-to-br from-black via-gray-900 to-black text-white relative overflow-hidden" style={{ paddingTop: '7rem' }}>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="grid gap-6 p-8 sm:p-10 rounded-2xl border-2 border-yellow-500 text-center animate-zoomPulse max-w-4xl mx-auto">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
+              Actualités & <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-600">Blog</span>
+            </h1>
+            <p className="text-xl text-gray-300 leading-relaxed">
+              Restez informé de nos dernières actualités et découvrez nos conseils d'experts 
+              pour réussir vos projets créatifs et événementiels.
+            </p>
+          </div>
+        </div>
+      </section>
 
       {/* Featured Post */}
       <section className="py-20">
@@ -135,9 +134,9 @@ const Blog = () => {
             <h2 className="text-3xl font-bold text-black mb-8 text-center">Article à la Une</h2>
             <Link to={`/blog/${featuredPost.slug}`} className="group block">
               <div className="bg-white rounded-2xl shadow-2xl overflow-hidden hover:shadow-3xl transition-all duration-300 transform hover:-translate-y-2">
-                <div className="grid grid-cols-1 lg:grid-cols-2">
+                <div className="flex flex-col items-center text-center lg:grid lg:grid-cols-2 lg:text-left lg:items-start">
                   {/* Image */}
-                  <div className="relative overflow-hidden">
+                  <div className="relative overflow-hidden w-full">
                     <img
                       src={featuredPost.image}
                       alt={featuredPost.title}
@@ -158,8 +157,8 @@ const Blog = () => {
                     </p>
 
                     {/* Meta */}
-                    <div className="flex items-center justify-between text-sm text-gray-500 mb-6">
-                      <div className="flex items-center space-x-4">
+                    <div className="flex flex-col items-center text-center gap-2 lg:flex-row lg:justify-between lg:text-left lg:items-center text-sm text-gray-500 mb-6">
+                      <div className="flex flex-col items-center gap-2 sm:flex-row sm:space-x-4">
                         <div className="flex items-center">
                           <User className="h-4 w-4 mr-1" />
                           {featuredPost.author}
@@ -173,7 +172,7 @@ const Blog = () => {
                     </div>
 
                     {/* CTA */}
-                    <div className="flex items-center text-yellow-600 font-semibold group-hover:text-yellow-700 transition-colors duration-300">
+                    <div className="flex items-center justify-center lg:justify-start text-yellow-600 font-semibold group-hover:text-yellow-700 transition-colors duration-300">
                       Lire l'article complet
                       <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
                     </div>
@@ -189,9 +188,9 @@ const Blog = () => {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-black mb-12 text-center">Actualités Récentes</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="flex flex-col items-center text-center md:grid md:grid-cols-3 md:text-left md:items-start gap-8">
             {recentNews.map((news) => (
-              <div key={news.id} className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden">
+              <div key={news.id} className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden w-full">
                 <div className="relative overflow-hidden h-48">
                   <img
                     src={news.image}
@@ -206,7 +205,7 @@ const Blog = () => {
                   <h3 className="font-bold text-black mb-3 hover:text-yellow-600 transition-colors duration-200">
                     {news.title}
                   </h3>
-                  <div className="flex items-center text-sm text-gray-500">
+                  <div className="flex justify-center md:justify-start items-center text-sm text-gray-500">
                     <Calendar className="h-4 w-4 mr-1" />
                     {news.date}
                   </div>
@@ -223,14 +222,14 @@ const Blog = () => {
           <div className="flex flex-col lg:flex-row gap-12">
             {/* Main Content */}
             <div className="lg:w-2/3">
-              <h2 className="text-3xl font-bold text-black mb-12">Articles du Blog</h2>
+              <h2 className="text-3xl font-bold text-black mb-12 text-center lg:text-left">Articles du Blog</h2>
               <div className="space-y-8">
                 {blogPosts.map((post) => (
                   <Link key={post.id} to={`/blog/${post.slug}`} className="group block">
                     <article className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden transform hover:-translate-y-1">
-                      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                      <div className="flex flex-col items-center text-center md:grid md:grid-cols-3 md:text-left md:items-start gap-6">
                         {/* Image */}
-                        <div className="relative overflow-hidden md:col-span-1">
+                        <div className="relative overflow-hidden w-full md:col-span-1">
                           <img
                             src={post.image}
                             alt={post.title}
@@ -240,11 +239,11 @@ const Blog = () => {
 
                         {/* Content */}
                         <div className="p-6 md:col-span-2">
-                          <div className="flex items-center mb-3">
+                          <div className="flex flex-col items-center text-center gap-2 md:flex-row md:items-center md:justify-between md:text-left mb-3">
                             <span className="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-sm font-medium">
                               {post.category}
                             </span>
-                            <span className="ml-auto text-sm text-gray-500">{post.readTime}</span>
+                            <span className="text-sm text-gray-500">{post.readTime}</span>
                           </div>
                           
                           <h3 className="text-xl font-bold text-black mb-3 group-hover:text-yellow-600 transition-colors duration-300">
@@ -255,8 +254,8 @@ const Blog = () => {
                             {post.excerpt}
                           </p>
 
-                          <div className="flex items-center justify-between text-sm text-gray-500">
-                            <div className="flex items-center space-x-4">
+                          <div className="flex flex-col items-center text-center gap-2 md:flex-row md:justify-between md:text-left text-sm text-gray-500">
+                            <div className="flex flex-col items-center gap-2 sm:flex-row sm:space-x-4">
                               <div className="flex items-center">
                                 <User className="h-4 w-4 mr-1" />
                                 {post.author}
@@ -279,20 +278,20 @@ const Blog = () => {
             <div className="lg:w-1/3">
               <div className="sticky top-24 space-y-8">
                 {/* Categories */}
-                <div className="bg-white rounded-xl shadow-lg p-6">
+                <div className="bg-white rounded-xl shadow-lg p-6 text-center lg:text-left">
                   <h3 className="text-xl font-bold text-black mb-6">Catégories</h3>
                   <ul className="space-y-3">
                     {categories.map((category, index) => (
                       <li key={index}>
                         <a
                           href="#"
-                          className="flex items-center justify-between text-gray-600 hover:text-yellow-600 transition-colors duration-200"
+                          className="flex flex-col items-center text-center sm:flex-row sm:justify-between sm:text-left text-gray-600 hover:text-yellow-600 transition-colors duration-200"
                         >
                           <span className="flex items-center">
                             <Tag className="h-4 w-4 mr-2" />
                             {category.name}
                           </span>
-                          <span className="bg-gray-100 text-gray-600 px-2 py-1 rounded text-sm">
+                          <span className="bg-gray-100 text-gray-600 px-2 py-1 rounded text-sm mt-2 sm:mt-0">
                             {category.count}
                           </span>
                         </a>
@@ -302,7 +301,7 @@ const Blog = () => {
                 </div>
 
                 {/* Newsletter */}
-                <div className="bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-xl p-6 text-black">
+                <div className="bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-xl p-6 text-black text-center lg:text-left">
                   <h3 className="text-xl font-bold mb-4">Newsletter</h3>
                   <p className="mb-6">
                     Recevez nos derniers articles et actualités directement dans votre boîte mail.
