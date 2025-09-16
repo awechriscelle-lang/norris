@@ -94,19 +94,19 @@ const Services = () => {
 
   const testimonials = [
     {
-      name: 'Marie Dubois',
+      name: 'Marie SEMEDE',
       role: 'Directrice Marketing, TechCorp',
       content: 'GOD\'S EYE a transformé notre événement de lancement. Leur professionnalisme et leur créativité ont dépassé toutes nos attentes.',
       rating: 5,
     },
     {
-      name: 'Jean-Paul Mensah',
+      name: 'Jean-Paul ADJOVI',
       role: 'Entrepreneur',
       content: 'Le shooting corporate réalisé par l\'équipe était parfait. Les photos reflètent parfaitement l\'image de notre entreprise.',
       rating: 5,
     },
     {
-      name: 'Fatou Kone',
+      name: 'Fatou IBRAHIM',
       role: 'Organisatrice d\'événements',
       content: 'Collaboration exceptionnelle ! Ils ont géré notre mariage de A à Z avec une attention aux détails remarquable.',
       rating: 5,
