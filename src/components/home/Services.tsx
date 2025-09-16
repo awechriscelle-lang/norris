@@ -1,30 +1,30 @@
 import React from 'react';
-import { Camera, Video, Plane, Users } from 'lucide-react';
+import { Camera, Video, Calendar, Home } from 'lucide-react';
 
 const Services = () => {
   const services = [
     {
       icon: Camera,
-      title: 'Photographie',
-      description: 'Photographie professionnelle au Bénin par Norris CODJO : événementiel, portraits, artistique.',
+      title: 'Communication & Branding',
+      description: 'Valorisation de l’image des particuliers, entreprises et organisations par Norris CODJO, à travers des stratégies de communication ciblées et impactantes.',
       color: 'from-blue-400 to-blue-600',
     },
     {
       icon: Video,
-      title: 'Production Audiovisuelle',
-      description: "Production vidéo au Bénin : clips, films d'entreprise, documentaires et contenus créatifs.",
+      title: 'Audiovisuel & Multimédia',
+      description: 'Photographie, vidéo et pilotage de drones par Norris CODJO : contenus visuels professionnels pour événements, clips et documentaires.',
       color: 'from-red-400 to-red-600',
     },
     {
-      icon: Plane,
-      title: 'Drone Bénin',
-      description: 'Pilotage de drone au Bénin : prises de vues aériennes, inspection technique et cartographie.',
+      icon: Calendar,
+      title: 'Événementiel',
+      description: 'Conception, organisation et gestion d’événements uniques au Bénin par Norris CODJO, transformant vos idées en expériences mémorables.',
       color: 'from-green-400 to-green-600',
     },
     {
-      icon: Users,
-      title: 'Immobilier & Développement',
-      description: 'Immobilier Cotonou : construction, vente et location de parcelles, développement territorial.',
+      icon: Home,
+      title: 'Immobilier',
+      description: 'Construction, location et vente de parcelles à Cotonou, accompagnement complet de vos projets immobiliers par Norris CODJO.',
       color: 'from-purple-400 to-purple-600',
     },
   ];
@@ -39,8 +39,7 @@ const Services = () => {
             Nos Domaines d'Expertise
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Découvrez nos quatre pôles clés qui font de GOD'S EYE votre partenaire idéal 
-            pour tous vos projets créatifs et événementiels.
+            Découvrez nos quatre pôles clés qui font de GOD'S EYE votre partenaire idéal pour tous vos projets créatifs, événementiels et immobiliers.
           </p>
         </div>
 
