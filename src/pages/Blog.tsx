@@ -50,6 +50,7 @@ const Blog = () => {
       category: 'Conseils',
       readTime: '6 min',
       slug: 'conseils-shooting-photo-corporate',
+      tags: ['photographie corporate', 'Bénin', 'conseils photo'],
     },
     {
       id: 3,
@@ -61,6 +62,7 @@ const Blog = () => {
       category: 'Événementiel',
       readTime: '10 min',
       slug: 'organiser-evenement-memorable-2025',
+      tags: ['événementiel Bénin', 'organisation', 'Cotonou'],
     },
     {
       id: 4,
@@ -72,6 +74,7 @@ const Blog = () => {
       category: 'Technologie',
       readTime: '7 min',
       slug: 'evolution-video-aerienne-drone',
+      tags: ['drone Bénin', 'vidéo aérienne', 'technologie'],
     },
     {
       id: 5,
@@ -83,6 +86,7 @@ const Blog = () => {
       category: 'Technique',
       readTime: '9 min',
       slug: 'secrets-bon-eclairage-studio',
+      tags: ['photographie Bénin', 'Norris CODJO', 'événementiel', 'drone Bénin'],
     },
     {
       id: 6,

@@ -36,7 +36,7 @@ const Footer = () => {
               </span>
             </Link>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              Production audiovisuelle, Communication, Événementiel & Immobilier au service de vos projets et de votre développement.
+              GOD'S EYE avec Norris CODJO, photographe professionnel au Bénin. Production audiovisuelle, drone, communication événementielle & immobilier à Cotonou.
             </p>
 
             {/* Social Links */}

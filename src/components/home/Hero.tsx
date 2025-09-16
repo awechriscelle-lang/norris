@@ -25,12 +25,15 @@ const Hero = () => {
           {/* Main Title */}
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold leading-tight">
             Donnez vie à votre image
+            <span className="block text-lg sm:text-xl lg:text-2xl font-normal text-yellow-400 mt-2">
+              avec Norris CODJO - Photographe professionnel
+            </span>
           </h1>
 
           {/* Sub Title */}
-          <p className="text-base sm:text-lg lg:text-2xl text-gray-200 leading-relaxed font-light">
+          <p className="text-base sm:text-lg lg:text-xl text-gray-200 leading-relaxed font-light">
             Production audiovisuelle, Communication, Événementiel & Immobilier<br />
-            au service de vos projets et de votre développement.
+            au service de vos projets et de votre développement au Bénin.
           </p>
 
           {/* CTA Buttons */}

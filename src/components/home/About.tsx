@@ -18,15 +18,15 @@ const About = () => {
               Qui sommes-nous ?
             </h2>
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              GOD'S EYE est une agence multisectorielle spécialisée en communication, audiovisuel, 
+              <strong>GOD'S EYE</strong>, dirigée par <strong className="text-yellow-600">Norris CODJO</strong>, photographe professionnel, est une agence multisectorielle spécialisée en communication, audiovisuel, 
               événementiel et immobilier. Nous accompagnons particuliers, entreprises et organisations 
-              dans la valorisation de leur image à travers la photographie, la vidéo, le pilotage de 
-              drone, la gestion d'événements et le développement immobilier.
+              au Bénin dans la valorisation de leur image à travers la photographie, la vidéo, le pilotage de 
+              drone, la gestion d'événements et le développement immobilier à Cotonou et dans tout le pays.
             </p>
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
               <strong className="text-yellow-600">Notre mission :</strong> transformer vos idées en expériences 
-              mémorables et impactantes, tout en contribuant au développement territorial à travers nos 
-              projets immobiliers innovants.
+              mémorables et impactantes au Bénin, tout en contribuant au développement territorial à travers nos 
+              projets immobiliers innovants. Norris CODJO et son équipe mettent leur expertise au service de votre réussite.
             </p>
 
             {/* Features */}

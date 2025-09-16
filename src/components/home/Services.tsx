@@ -6,25 +6,25 @@ const Services = () => {
     {
       icon: Camera,
       title: 'Photographie',
-      description: 'Shooting événementiel, portraits professionnels, photographie artistique.',
+      description: 'Photographie professionnelle au Bénin par Norris CODJO : événementiel, portraits, artistique.',
       color: 'from-blue-400 to-blue-600',
     },
     {
       icon: Video,
       title: 'Production Audiovisuelle',
-      description: 'Réalisation de clips, films d\'entreprise, documentaires et contenus créatifs.',
+      description: 'Production vidéo au Bénin : clips, films d\'entreprise, documentaires et contenus créatifs.',
       color: 'from-red-400 to-red-600',
     },
     {
       icon: Plane,
-      title: 'Pilotage de Drone',
-      description: 'Prises de vues aériennes, inspection technique et cartographie professionnelle.',
+      title: 'Drone Bénin',
+      description: 'Pilotage de drone au Bénin : prises de vues aériennes, inspection technique et cartographie.',
       color: 'from-green-400 to-green-600',
     },
     {
       icon: Users,
       title: 'Immobilier & Développement',
-      description: 'Construction, vente et location de parcelles, développement territorial.',
+      description: 'Immobilier Cotonou : construction, vente et location de parcelles, développement territorial.',
       color: 'from-purple-400 to-purple-600',
     },
   ];
